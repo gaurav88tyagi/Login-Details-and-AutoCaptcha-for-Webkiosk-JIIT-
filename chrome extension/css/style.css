@@ -1,0 +1,7 @@
+.container {
+    text-align: center;
+    padding: 17px;
+    margin: auto;
+    background-color: gray;
+    border-style: ridge;
+}

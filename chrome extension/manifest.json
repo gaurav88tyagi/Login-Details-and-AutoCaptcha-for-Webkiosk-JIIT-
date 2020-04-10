@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Login Details and AutoCaptcha for Webkiosk(JIIT)",
+  "description": "Fills in the Login fields and captcha for you at Webkiosk (JIIT) Logins (https://webkiosk.jiit.ac.in)",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "image/logo.png",
+    "default_popup": "html/popup.html"
+  },
+  "permissions": [
+    "storage",
+    "notifications"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://webkiosk.jiit.ac.in/"
+      ],
+      "js": [
+        "js/jquery.js",
+        "js/script.js"
+      ]
+    }
+  ]
+}
